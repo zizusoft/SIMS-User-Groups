@@ -12,7 +12,7 @@ To create a new user and import group permission, you will need to log into SIMS
 
 ## Downloading the SIMS User Group
 
-Navigate to the **Releases** section of this repository and select the zip file that corresponds to your SIMS Client Version.
+Navigate to the [**Releases**](https://github.com/zizusoft/SIMS-User-Groups/releases) section of this repository and select the zip file that corresponds to your SIMS Client Version.
 
 Your SIMS client version can be found on the splash screen when you log into SIMS:
 
