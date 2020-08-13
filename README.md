@@ -1,5 +1,3 @@
-# SIMS-User-Groups
-
 # Creating a SIMS User Account
 
 In order for any application to access data from SIMS through the Buisness Objects, the application must be provided with a SIMS username and password.
