@@ -68,46 +68,57 @@ To create a new user and import group permission, you will need to log into SIMS
 
 ## Creating a New SIMS User
 
-1. Navigate to **Focus > System Manager > Manage Users**
+1. Navigate to **Focus > System Manager > Manage Users**![](https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-19-27-35-user8.PNG)*
    
-   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-00-34-12-sims-UserManager.png)
+   
 
 2. Press the **New** button:
    
-   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-44-42-sims-NewUser.PNG)
+   <img title="" src="https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-19-28-11-user9.PNG" alt="" width="276">
+   
+   
 
 3. Give your new user a surname and forename such as **coverdiary** for both. There is no need to complete a date of birth or gender. Click **Continue**.
    
-   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-47-02-SIMS-NewUser2.PNG)
+   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-19-29-22-user11.PNG)
+   
 
 4. Next we want to add this user to the permissions group we imported earlier. To do this click the **Add** button on right side of the **Groups** panel.
    
-   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-50-26-sims-AddGroup.PNG)
+   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-19-30-45-user12.PNG)
+   
 
 5. Select the imported group from the list and click **OK**
    
-   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-52-36-sims-AddGroup2.PNG)
+   <img title="" src="https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-19-31-41-user13.PNG" alt="" width="281">
+   
 
 6. At this point, take a look at the **Login Details** panel under section 2. Even though the username text box is greyed out, you can still change the username. It will default to the firstname followed by the lastname. You may wish to edit this something more simple such as just **coverdiary** (rather then coverdiarycoverdiary). You will also need to copy the randomly generated password shown in the texbox below the username:
    
-   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-55-53-sims-LoginDetails.PNG)
+   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-19-33-10-user14.PNG)
+   
 
 7. Click **Save**
    
-   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-57-19-sims-UserSave.PNG)
+   <img title="" src="https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-19-34-12-user16.PNG" alt="" width="342">
+   
 
 8. Close SIMS
+   
 
 9. Relaunch SIMS and enter your chosen username (from step 6) and copied password. You should also tick the **Change Password** box:
    
-   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-12-01-59-sims-ChangePass.PNG)
+   <img title="" src="https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-19-35-23-user17.PNG" alt="" width="220">
+   
 
 10. Change the password to something more memerable and click **OK**.
     
     *Note: SIMS passwords must be at least 8 characters in length.*
     
-    ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-12-03-15-sims-ChangePass2.PNG)
+    <img title="" src="https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-19-36-27-user18.PNG" alt="" width="254">
+    
 
 11. Close SIMS.
+    
 
 You now have a new user with the minimum permissions required to run the application.
