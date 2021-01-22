@@ -22,7 +22,7 @@ SIMS User Groups are stored as XML files. To find the user group for you applica
 
 ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-16-46-40-user2.PNG)
 
-You will need to update the XML file (open it in Notepad) and modify the **<DatabaseVersion>** tag on line 4:
+You will need to update the XML file (open it in Notepad) and modify the **DatabaseVersion** tag on line 4:
 
 <img title="" src="https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-16-50-03-user3.PNG" alt="" width="372">
 
@@ -34,7 +34,7 @@ Your SIMS database version can be found by logging into SIMS normally and naviga
 
 A splash screen will show letting you know the database version number you are using. 
 
-Place this number in the XML file on line 4 in the <DatabaseVersion> tag.
+Place this number in the XML file on line 4 in the **DatabaseVersion** tag.
 
 
 
