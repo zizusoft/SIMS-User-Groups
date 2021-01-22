@@ -6,82 +6,108 @@ Users in SIMS can be granted different levels of access depending on the depth o
 
 For the application you are about to install, a SIMS user group is provided which can be imported into SIMS - this user group has the minimum permissions asociated with it that are needed to run the application.
 
-***There is no requirement to carry out the below steps to create a new SIMS user to use the application you are about to intall. You can use an existing SIMS user as long as they have suitable permissions.***
+***There is no requirement to carry out the below steps to create a new SIMS user to use the application you are about to intall. You can use an existing SIMS user you already have set up in your school as long as they have suitable permissions.*** 
 
-To create a new user and import group permission, you will need to log into SIMS with an administrator user that has permission to create users, import user groups and modify permissions. The default administrator in SIMS is called **sysman**. If you are not sure how to create new users - speak to your Network Manager.
+***If you want to use a SIMS user that you already have set up in your school, you can check if that user has suitable permissions by clicking the yellow 'Check Permissions' button on the server software's Config.aspx page as shown below.***
 
-## Downloading the SIMS User Group
+<img title="" src="https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-16-41-09-user1.PNG" alt="" width="255">
 
-Navigate to the [**Releases**](https://github.com/zizusoft/SIMS-User-Groups/releases) section of this repository and select the zip file that corresponds to your SIMS Client Version.
 
-Your SIMS client version can be found on the splash screen when you log into SIMS:
 
-![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-00-28-41-sims-VersionNumber.PNG)
 
-Extract the .zip file and you will find a set of .xml files, each named as one of the apps that ZizuSoft Ltd. offers. Find the .xml file that relates to the app you want to install, and delete the others.
+
+## Preparing the SIMS User Group
+
+SIMS User Groups are stored as XML files. To find the user group for you application, have a look on the Application Server that the site is running on and look for the **SIMS User Group** folder in the root. In this folder, you should find an .xml file which starts **ZIZU-** as shown below.
+
+![](https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-16-46-40-user2.PNG)
+
+You will need to update the XML file (open it in Notepad) and modify the **<DatabaseVersion>** tag on line 4:
+
+<img title="" src="https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-16-50-03-user3.PNG" alt="" width="372">
+
+The DatabaseVersion needs to updated to the DatabaseVersion of SIMS you want to import the permissions for. If you don't update this value to the database value you are using, the import will fail.
+
+Your SIMS database version can be found by logging into SIMS normally and navigating to **Help > About SIMS.NET**.
+
+<img title="" src="https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-16-54-40-user4.PNG" alt="" width="372">
+
+A splash screen will show letting you know the database version number you are using. 
+
+Place this number in the XML file on line 4 in the <DatabaseVersion> tag.
+
+
+
+
+
+## Importing the SIMS User Group
 
 ***Note: In the below guide, we will assume you are adding a SIMS user to use the Cover Diary App, however the process is similar for other apps too***
 
-## Importing a SIMS User Group
+To create a new user and import group permission, you will need to log into SIMS with an administrator user that has permission to create users, import user groups and modify permissions. The default administrator in SIMS is called **sysman**. If you are not sure how to create new users - speak to your Network Manager.
 
 1. In SIMS navigate to **Focus > System Manager > Import Groups**
-  
-  ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/04/30-23-23-03-sims-ImportGroup.png)
-  
+   
+   <img title="" src="https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-17-07-59-user5.PNG" alt="" width="358">
+   
+
 2. Click the **Select Import File** button:
-  
-  ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/04/30-23-25-42-sims-SelectImport.fw.png)
-  
-3. Navigate to the .xml file downloaded (as instructed earlier).
-  
+   
+   <img title="" src="https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-17-09-29-user6.PNG" alt="" width="362">
+   
+   
+
+3. Navigate to the .xml file you have prepared (as instructed earlier).
+   
+
 4. The User Group for the application should be displayed. Click the **Import** button to import the group to SIMS.
-  
-  ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-00-25-15-sims-ImportGroup2.PNG)
-  
+   
+   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-17-10-52-user7.PNG)
+
+## 
 
 ## Creating a New SIMS User
 
 1. Navigate to **Focus > System Manager > Manage Users**
-  
-  ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-00-34-12-sims-UserManager.png)
-  
+   
+   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-00-34-12-sims-UserManager.png)
+
 2. Press the **New** button:
-  
-  ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-44-42-sims-NewUser.PNG)
-  
+   
+   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-44-42-sims-NewUser.PNG)
+
 3. Give your new user a surname and forename such as **coverdiary** for both. There is no need to complete a date of birth or gender. Click **Continue**.
-  
-  ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-47-02-SIMS-NewUser2.PNG)
-  
+   
+   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-47-02-SIMS-NewUser2.PNG)
+
 4. Next we want to add this user to the permissions group we imported earlier. To do this click the **Add** button on right side of the **Groups** panel.
-  
-  ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-50-26-sims-AddGroup.PNG)
-  
+   
+   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-50-26-sims-AddGroup.PNG)
+
 5. Select the imported group from the list and click **OK**
-  
-  ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-52-36-sims-AddGroup2.PNG)
-  
+   
+   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-52-36-sims-AddGroup2.PNG)
+
 6. At this point, take a look at the **Login Details** panel under section 2. Even though the username text box is greyed out, you can still change the username. It will default to the firstname followed by the lastname. You may wish to edit this something more simple such as just **coverdiary** (rather then coverdiarycoverdiary). You will also need to copy the randomly generated password shown in the texbox below the username:
-  
-  ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-55-53-sims-LoginDetails.PNG)
-  
+   
+   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-55-53-sims-LoginDetails.PNG)
+
 7. Click **Save**
-  
-  ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-57-19-sims-UserSave.PNG)
-  
+   
+   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-11-57-19-sims-UserSave.PNG)
+
 8. Close SIMS
-  
+
 9. Relaunch SIMS and enter your chosen username (from step 6) and copied password. You should also tick the **Change Password** box:
-  
-  ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-12-01-59-sims-ChangePass.PNG)
-  
+   
+   ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-12-01-59-sims-ChangePass.PNG)
+
 10. Change the password to something more memerable and click **OK**.
-  
-  *Note: SIMS passwords must be at least 8 characters in length.*
-  
-  ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-12-03-15-sims-ChangePass2.PNG)
-  
+    
+    *Note: SIMS passwords must be at least 8 characters in length.*
+    
+    ![](https://raw.githubusercontent.com/zizusoft/Assets/master/2020/05/01-12-03-15-sims-ChangePass2.PNG)
+
 11. Close SIMS.
-  
 
 You now have a new user with the minimum permissions required to run the application.
