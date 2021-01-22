@@ -20,7 +20,7 @@ For the application you are about to install, a SIMS user group is provided whic
 
 SIMS User Groups are stored as XML files. To find the user group for you application, have a look on the Application Server that the site is running on and look for the **SIMS User Group** folder in the root. In this folder, you should find an .xml file which starts **ZIZU-** as shown below.
 
-![](https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-16-46-40-user2.PNG)
+<img title="" src="https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-16-46-40-user2.PNG" alt="" width="370">
 
 You will need to update the XML file (open it in Notepad) and modify the **DatabaseVersion** tag on line 4:
 
@@ -68,7 +68,7 @@ To create a new user and import group permission, you will need to log into SIMS
 
 ## Creating a New SIMS User
 
-1. Navigate to **Focus > System Manager > Manage Users**![](https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-19-27-35-user8.PNG)*
+1. Navigate to **Focus > System Manager > Manage Users**<img title="" src="https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-19-27-35-user8.PNG" alt="" width="332">
    
    
 
