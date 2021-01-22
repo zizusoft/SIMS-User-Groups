@@ -69,6 +69,7 @@ To create a new user and import group permission, you will need to log into SIMS
 ## Creating a New SIMS User
 
 1. Navigate to **Focus > System Manager > Manage Users**
+   
    <img title="" src="https://raw.githubusercontent.com/zizusoft/Assets/master/2021/01/22-19-27-35-user8.PNG" alt="" width="332">
    
    
